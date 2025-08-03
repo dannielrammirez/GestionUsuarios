@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Configuración de CORS para permitir solicitudes desde el frontend Blazor
 builder.Services.AddCors(options =>
 {
 	options.AddPolicy(name: "AllowBlazorApp",
