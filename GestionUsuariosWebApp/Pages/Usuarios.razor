@@ -92,13 +92,14 @@ else
     {
         _isLoading = true;
         _errorMessage = null;
+
         try
         {
             _usuarios = await UsuarioService.GetUsuariosAsync();
         }
         catch (HttpRequestException ex)
         {
-            _errorMessage = $"No se pudo conectar con la API. Asegúrate de que la API esté ejecutándose en http://localhost:5000. Error: {ex.Message}";
+            _errorMessage = $"No se pudo conectar con la API. Asegúrate de que la API esté ejecutándose en http://localhost:5000 y la política CORS sea correcta. Error: {ex.Message}.";
         }
         catch (Exception ex)
         {
