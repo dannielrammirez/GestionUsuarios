@@ -1,0 +1,42 @@
+﻿@page "/"
+
+<PageTitle>Bienvenido - Prueba Técnica</PageTitle>
+
+<div class="text-center">
+    <h1 class="display-4">¡Bienvenido a la Prueba Técnica!</h1>
+    <p class="lead">Desarrollo presentado por: <strong>[Tu Nombre Completo]</strong></p>
+    <hr class="my-4">
+    <p>Este proyecto forma parte de la prueba técnica para el rol de <strong>Desarrollador Senior</strong>.</p>
+    <p>La aplicación tiene como objetivo principal la <strong>Gestión de Usuarios</strong>, demostrando capacidades de desarrollo Full-Stack con tecnologías Microsoft.</p>
+    <hr class="my-4">
+    <h4>Descripción y Comportamiento de la Aplicación:</h4>
+    <p>Esta aplicación se compone de dos partes fundamentales:</p>
+    <ol class="text-start mx-auto" style="max-width: 600px;">
+        <li>
+            <strong>API RESTful (.NET Core 9):</strong> Un backend robusto construido con ASP.NET Core Web API, utilizando Entity Framework Core para la persistencia de datos. Esta API expone un conjunto de servicios REST que permiten realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre una tabla de usuarios en una base de datos `gestion_usuarios`.
+            <ul>
+                <li><strong>Tecnologías Clave:</strong> C#, .NET Core 9, ASP.NET Core Web API, Entity Framework Core, SQL Server (LocalDB).</li>
+                <li><strong>Endpoints Principales:</strong> <code>/api/Usuarios</code> (GET, POST, PUT, DELETE).</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Aplicación Web Frontend (Blazor WebAssembly):</strong> Una interfaz de usuario interactiva desarrollada con Blazor WebAssembly. Esta aplicación consume directamente los servicios de la API REST para ofrecer una experiencia de gestión de usuarios completa, sin recargas de página.
+            <ul>
+                <li><strong>Tecnologías Clave:</strong> C#, Blazor WebAssembly, HTML, CSS.</li>
+                <li>
+                    <strong>Funcionalidades:</strong>
+                    <ul>
+                        <li>**Crear Usuario:** Formulario intuitivo para registrar nuevos usuarios.</li>
+                        <li>**Listar Usuarios:** Vista tabular que muestra todos los usuarios registrados, actualizándose dinámicamente.</li>
+                        <li>**Actualizar Usuario:** Edición en línea de los datos de un usuario existente.</li>
+                        <li>**Eliminar Usuario:** Funcionalidad para remover usuarios de la base de datos con confirmación.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ol>
+    <p>
+        La integración de estas dos partes demuestra la capacidad de construir soluciones completas, desde la lógica de negocio en el servidor hasta la experiencia de usuario en el cliente, aprovechando el poder del ecosistema .NET.
+    </p>
+    <p class="mt-5">Para empezar, navega a la sección de <a href="usuarios"><strong>Gestión de Usuarios</strong></a>.</p>
+</div>

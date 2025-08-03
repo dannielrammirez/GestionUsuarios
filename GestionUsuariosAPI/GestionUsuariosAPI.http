@@ -1,0 +1,40 @@
+@GestionUsuariosAPI_HostAddress = http://localhost:5000
+
+###
+# GET todos los usuarios
+GET {{GestionUsuariosAPI_HostAddress}}/api/Usuarios
+Accept: application/json
+
+###
+# GET usuario por ID
+GET {{GestionUsuariosAPI_HostAddress}}/api/Usuarios/5
+Accept: application/json
+
+###
+# POST crear nuevo usuario
+POST {{GestionUsuariosAPI_HostAddress}}/api/Usuarios
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nombre": "Daniel Ramirez",
+  "email": "dannielrammirez@gmail.com"
+}
+
+###
+# PUT actualizar usuario
+PUT {{GestionUsuariosAPI_HostAddress}}/api/Usuarios/2
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 2,
+  "nombre": "Daniel Ramirez Actualizado",
+  "email": "dannielrammirez@gmail.com",
+  "fechaCreacion": "2023-10-26T10:00:00Z"
+}
+
+###
+# DELETE eliminar usuario
+DELETE {{GestionUsuariosAPI_HostAddress}}/api/Usuarios/2
+Accept: application/json
