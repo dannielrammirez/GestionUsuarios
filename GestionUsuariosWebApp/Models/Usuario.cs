@@ -8,6 +8,7 @@ namespace GestionUsuariosWebApp.Models
 
 		[Required(ErrorMessage = "El nombre es obligatorio")]
 		[StringLength(100, ErrorMessage = "El nombre no puede exceder los 100 caracteres")]
+		[MinLength(3, ErrorMessage = "El nombre debe tener al menos 3 caracteres")]
 		public string? Nombre { get; set; }
 
 		[Required(ErrorMessage = "El email es obligatorio")]
